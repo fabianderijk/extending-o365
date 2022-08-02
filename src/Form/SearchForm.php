@@ -22,9 +22,9 @@ class SearchForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
 
-    $form['message'] = [
-      '#type' => 'textarea',
-      '#title' => $this->t('Message'),
+    $form['searchterm'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Search term'),
       '#required' => TRUE,
     ];
 
@@ -33,7 +33,7 @@ class SearchForm extends FormBase {
     ];
     $form['actions']['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Send'),
+      '#value' => $this->t('Search!'),
     ];
 
     return $form;
