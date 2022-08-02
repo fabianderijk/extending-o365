@@ -1,0 +1,7 @@
+name: 'Search in Sharepoint'
+type: module
+description: 'Search for files for SharePoint'
+core_version_requirement: ^9 || ^10
+package: 'Office 365'
+dependencies:
+  - o365:o365

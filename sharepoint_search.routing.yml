@@ -1,0 +1,7 @@
+sharepoint_search.search:
+  path: '/sharepoint-search'
+  defaults:
+    _title: 'Search in SharePoint'
+    _form: 'Drupal\sharepoint_search\Form\SearchForm'
+  requirements:
+    _permission: 'access content'
